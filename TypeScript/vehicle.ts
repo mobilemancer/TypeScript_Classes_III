@@ -1,4 +1,4 @@
-class TerrainVehicle {
+class Vehicle {
 	private name: string;
 	private speed: number;
 
@@ -15,6 +15,6 @@ class TerrainVehicle {
 
 (function() {
 	console.log("");
-	var vehicle = new TerrainVehicle("Test vehicle", 60);
+	var vehicle = new Vehicle("Test vehicle", 60);
 	console.log(vehicle.move(10));
 })();

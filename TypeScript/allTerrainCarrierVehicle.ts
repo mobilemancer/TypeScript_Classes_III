@@ -1,4 +1,4 @@
-class AllTerrainCarrierVehicle extends TerrainVehicle implements TroopCarrier {
+class AllTerrainCarrierVehicle extends Vehicle implements TroopCarrier {
 	private legs: number;
 	private troopsInHold: number;
 
@@ -17,9 +17,9 @@ class AllTerrainCarrierVehicle extends TerrainVehicle implements TroopCarrier {
 		return super.move(distance) + ` by walking on ${this.legs} legs`;
 	}
 
-	pickup(troops: number) {
+	pickup(troops: number): string {
 		if (this.troopsInHold + troops > this.troopCapacity) {
-			return "Can't take that many troops";
+			return "Can't pick up that many troops";
 		} else {
 			this.troopsInHold += troops;
 			return "Troops picked up";

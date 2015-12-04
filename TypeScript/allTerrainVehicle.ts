@@ -1,4 +1,4 @@
-class AllTerrainVehicle extends TerrainVehicle {
+class AllTerrainVehicle extends Vehicle {
 	private legs: number;
 
 	constructor(name: string, speed: number, legs: number) {
