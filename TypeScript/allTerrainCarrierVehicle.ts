@@ -28,9 +28,9 @@ class AllTerrainCarrierVehicle extends Vehicle implements TroopCarrier {
 }
 
 (function() {
-	var ATST = new AllTerrainCarrierVehicle("AT-ST", 90, 2, 40, true);
+	var ATAT = new AllTerrainCarrierVehicle("AT-AT", 60, 4, 40, true);
 	console.log("");
-	console.log(ATST.move(30));
-	console.log(ATST.pickup(35));
-	console.log(ATST.pickup(10));
+	console.log(ATAT.move(30));
+	console.log(ATAT.pickup(35));
+	console.log(ATAT.pickup(10));
 })();
